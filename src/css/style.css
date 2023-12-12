@@ -1,0 +1,109 @@
+html {
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    background-color: var(--neutral-3);
+    min-height: 100vh;
+}
+
+main {
+    padding: 5.1em 1.5em;
+}
+
+main .top-page {
+    text-align: center;
+}
+
+main .top-page h1 {
+    color: var(--primary-1);
+    font-size: 2.3em;
+    line-height: 0.89em;
+    margin-bottom: 0.5em;
+    padding: 0 1em;
+}
+
+main .top-page p {
+    color: var(--neutral-1);
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-bottom: 2em;
+}
+
+main .reviews {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    gap: 1em;
+    margin-bottom: 3em;
+}
+
+main .review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    border-radius: 8px;
+    font-size: 0.9em;
+    gap: 1em;
+    background-color: var(--neutral-2);
+    color: var(--primary-1);
+}
+
+@media (min-width:430px) {
+    main .review{
+        flex-direction: row;
+    }
+}
+
+main .review .stars img {
+    margin: 0 0.15em;
+}
+
+main .review h2{
+    font-size: 1.18em;
+}
+
+.statements {
+    display: grid;
+    grid-template: repeat(3, 15.5em) / 1fr;
+    gap: 1em;
+}
+
+.statements>div {
+    background-color: var(--primary-1);
+    border-radius: 8px;
+    padding: 2.7em 2em;
+    color: var(--neutral-3);
+}
+
+.statements .profile-data {
+    display: flex;
+    gap: 1.5em;
+    margin-bottom: 1.7em;
+}
+
+.statements .profile-data img {
+    width: 2.4em;
+    border-radius: 25px;
+}
+
+.statements .profile-data .profile-name h4 {
+    color: var(--primary-2);
+    font-weight: 100;
+    letter-spacing: 0.05em;
+}
+
+.statements p {
+    line-height: 1.3em;
+    font-size: 1.05em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--primary-2);
+}

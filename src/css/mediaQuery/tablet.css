@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    display: grid;
+    grid-template:
+        "top-page reviews" 
+        "statements statements";
+}
+
+main .top-page {
+    grid-area: top-page;
+    text-align: start;
+    margin-bottom: 1.9em;
+}
+
+main .top-page h1 {
+    font-size: 3.3em;
+    line-height: .9em;
+    padding: 0;
+    margin-bottom: 0.5em;
+    letter-spacing: -0.01em;
+}
+
+main .top-page p {
+    font-size: 1.1em;
+    font-weight: 500;
+    width: 25em;
+}
+
+main .reviews {
+    grid-area: reviews;
+    grid-template:
+        "rv1 rv1 rv1 . ." 3.5em
+        ". rv2 rv2 rv2 ." 3.5em
+        ". . rv3 rv3 rv3" 3.5em / 3em 3em 5em 3em 3em;
+        gap: 1em 0;
+}
+
+main .review {
+    align-items: center;
+}
+
+main .reviews .rv1 {
+    grid-area: rv1;
+}
+
+main .review{
+    justify-content: flex-start;
+    padding: 0 2.2em;
+}
+
+main .review .stars {
+}
+
+main .reviews .rv2 {
+    grid-area: rv2;
+}
+
+main .reviews .rv3 {
+    grid-area: rv3;
+}
+
+main .statements {
+    grid-area: statements;
+    display: grid;
+    grid-template:
+        "statm1 . ." 1em
+        "statm1 statm2 ." 1em 
+        "statm1 statm2 statm3" 12.6em
+        ". statm2 statm3" 1em
+        ". . statm3" 1em;
+    grid-template-columns: repeat(3, 15em);
+    gap: 0 1.9em;
+}
+
+main .statements .statement1 {
+    grid-area: statm1;
+}
+
+main .statements .statement2 {
+    grid-area: statm2;
+}
+
+main .statements .statement3 {
+    grid-area: statm3;
+}
+
+.statements .profile-data .profile-name{
+    font-size: 0.9em;
+}
+
+.statements .profile-data .profile-name h3 {
+}
